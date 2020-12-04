@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class TextProcessorTest{
 
@@ -34,5 +35,10 @@ public class TextProcessorTest{
         assertEquals(textProcessor.reverseString(str), reversed);
     }
 
+    @Test
+    void testnull(){
+        String str = null;
+        assertNull(str, "This should be null");
+    }
 
 }

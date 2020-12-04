@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class CalculatorTest {
 
@@ -34,6 +36,12 @@ public class CalculatorTest {
     void testMulti(){
         Calculator calculator = new Calculator();
         assertEquals(4, calculator.multi(2,2));
+    }
+
+    @Test
+    void testTrue(){
+        Calculator calculator = new Calculator();
+        assertTrue(calculator.multi(2,2)==4);
     }
 
 
